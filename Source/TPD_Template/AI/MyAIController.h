@@ -13,5 +13,9 @@ UCLASS()
 class TPD_TEMPLATE_API AMyAIController : public AAIController
 {
 	GENERATED_BODY()
-	
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	UBehaviorTree* BehaviourTree;
+
+	virtual void BeginPlay() override;
 };
