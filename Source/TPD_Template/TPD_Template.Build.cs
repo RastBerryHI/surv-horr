@@ -10,6 +10,6 @@ public class TPD_Template : ModuleRules
 
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "EnhancedInput"});
 
-        PublicDependencyModuleNames.AddRange(new string[] { "AIModule", "GameplayTasks" });
+        PublicDependencyModuleNames.AddRange(new string[] { "AIModule", "GameplayTasks", "NavigationSystem" });
 	}
 }
