@@ -37,7 +37,7 @@ EBTNodeResult::Type UBTTaskNode_FindRandomLocation::ExecuteTask(UBehaviorTreeCom
 	{
 		AIControllerOwner->GetBlackboardComponent()->SetValueAsVector(BlackboardKey.SelectedKeyName, Location.Location);
 
-		DrawDebugSphere(GetWorld(), Location.Location, 5.f, 32, FColor::Red, false, 120);
+		DrawDebugSphere(GetWorld(), Location.Location, 5.f, 32, FColor::Red, false, 20.f);
 	}
 
 	// Finishing task and signaling that task completed successfuly
